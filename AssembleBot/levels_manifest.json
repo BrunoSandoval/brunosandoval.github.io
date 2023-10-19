@@ -1,0 +1,6 @@
+{
+    "levels":[
+        "test.json",
+        "test_folder/invalid.json"
+    ]
+}
