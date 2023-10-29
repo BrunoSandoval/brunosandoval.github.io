@@ -1,33 +1,36 @@
 {
-	"tiles":{
-		"layers": [[
-				[null,[2,3],[2,3],[2,3],null],
-				[[2,0],null,null,null,[2,2]],
-				[[2,0],null,null,null,[2,2]],
-				[[2,0],null,null,null,[2,2]],
-				[null,[2,1],[2,1],[2,1],null]
-			],[
-				[{"type":1,"rot":1},[1,0],[1,0],{"type":1,"rot":2}],
-				[[1,1],0,0,0,[1,1]],
-				[[1,1],0,0,0,[1,1]],
-				[[1,1],0,0,0,[1,1]],
-				[{"type":1,"rot":0},[1,0],[1,0],{"type":1,"rot":3}]
-			]
+	"tiles":[
+		[
+			[null,[2,3,2],[2,3],[2,3,3],null],
+			[[2,0,3],null,null,null,[2,2,2]],
+			[[2,0],null,null,null,[2,2]],
+			[[2,0,2],null,null,null,[2,2,3]],
+			[null,[2,1,3],[2,1],[2,1,2],null]
+		],[
+			[{"type":1,"rot":1},[1,0],[1,0],{"type":1,"rot":2}],
+			[[1,1],0,0,0,[1,1]],
+			[[1,1],0,0,0,[1,1]],
+			[[1,1],0,0,0,[1,1]],
+			[{"type":1,"rot":0},[1,0],[1,0],{"type":1,"rot":3}]
 		]
-	},
+	],
 	
-	"tile_offsets": {
-		"x": -2,
-		"y": -2,
-		"height": 0
-	},
+	"offset_map": [2, 0, 2],
 	
-	"fixed_camera_pos": {
-		"x": -2,
-		"y": -2
-	},
+	"fixed_camera_views": [
+		{"pos":[-2, 8, -2], "rot":[0,0,0], "name":"Security Feed 1"}
+	],
+	"forbid_perspectives": [
+		"all",
+		"first_person",
+		"third_person",
+		"third_person_near",
+		"third_person_far",
+		"shoulder_left",
+		"shoulder_right",
+	],
 	
 	"objects": [
-	{"type":"ball","pos_x":1,"pos_y":2}
+		{"type":"ball","pos":[1,0,2]}
 	]
 }
