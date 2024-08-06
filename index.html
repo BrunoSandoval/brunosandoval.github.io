@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
+
     <head>
-        <meta charset="utf-8">
-        <title>TO BE FILLED</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Site</title>
+        <link rel="stylesheet" href="main.css" />
     </head>
+
+
     <body>
-        <p>Welcome to my site, this should hopefully be filled <a href="https://en.wikipedia.org/wiki/Procrastination">later</a></p>
-        <p>The robot game is <a href="/AssembleBot/">here</a> </p>
+        <nav>
+            <img src="robot.png" alt="" height="64" width="64" />
+            <button onclick="document.location='index.html'" type="button" name="button" class="navbtn">Home</button>
+            <button onclick="document.location='#robot'" type="button" name="button" class="navbtn">Robot</button>
+        </nav>
+        <div class="maindiv">
+            <div id="robot">
+                <h3> Robot! </h3>
+                <ul>
+                    <li><a href="/AssembleBot/"> AssembleBot </a> (<a href="/AssembleBot/">GitHub</a>) </li>
+                </ul>
+            </div>
+        </div>
     </body>
+
 </html>
