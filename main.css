@@ -1,25 +1,32 @@
 body {
-    background-color: antiquewhite;
+    background-color: #05050F;
     padding: 0px;
     margin: 0px;
 }
 nav {
-    background-color: antiquewhite;
-    border: 3px inset darkslategrey;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #080816;
+    border: 3px outset #1F1F3F;
     padding: 3px;
 }
 
 .navbtn {
     font-size: 24pt;
+    color: #DDF;
     padding: 9px;
-    background: lightsteelblue;
-    border: 3px outset slategrey;
+    background: #222;
+    border: 3px outset #1F1F3F;
     align-self: flex-start;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 .navbtn:hover, .navbtn:active {
     padding: 9px;
-    background: azure;
-    border: 3px outset dimgray;
+    color: #FFF;
+    background: #334;
+    border: 3px outset #2F2F4F;
     align-self: flex-start;
 }
 
@@ -27,17 +34,18 @@ nav {
     width: 10%;
     float: left;
     margin: 0px;
-    border: 3px solid black;
+    border: 3px solid #1F1F3F;
 }
 .right {
     width: 20%;
     float: right;
     margin: 0px;
-    border: 3px solid black;
+    border: 3px solid #1F1F3F;
 }
 
 .maindiv {
-    background-color: azure;
+    background-color: #000;
+    color: #DDF;
     height: 100vh;
     padding-top: 3vw;
     padding-left: 1vw;
@@ -49,5 +57,8 @@ nav {
 img {
     margin: 0px;
     padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
     float: left;
+    image-rendering: pixelated;
 }
