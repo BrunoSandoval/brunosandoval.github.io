@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-event-set-component@5.x.x/dist/aframe-event-set-component.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin: 0; overflow: hidden;">
+  <script>
+    AFRAME.registerComponent("tap_to_redirect", {
+      schema: {
+        url: {default: "/"}
+      },
+      init: function () {
+        var el = this.el;
+        var d = this.data;
+        el.addEventListener("mouseup", function () {
+          window.location.href = d.url
+        });
+      }
+    });
+  </script>
+
+  <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3; videoTexture: true; debugUIEnabled: false'>
+    <a-assets>
+      <a-asset-item id="robot" src="RobotModel.glb"></a-asset-item>
+      <a-asset-item id="home" src="house.glb"></a-asset-item>
+      <a-asset-item id="!" src="!.glb"></a-asset-item>
+    </a-assets>
+
+    <!-- Camera -->
+    <a-marker type="barcode" value="12">
+      <!-- 3D Object -->
+      <a-entity position="0 0 0" rotation="0 270 0" gltf-model="#robot" tap_to_redirect="url: /AssembleBot"
+        event-set__enter="_event: mouseenter; _target: #bot_focus; visible: true"
+        event-set__leave="_event: mouseleave; _target: #bot_focus; visible: false">>
+        <a-entity id="bot_focus" visible="false" position="0 1.6 0" rotation="0 0 0" scale="0.1 0.1 0.1"
+          gltf-model="#!"></a-entity>
+      </a-entity>
+      <a-entity position="-1 0 0 " rotation="0 0 0" scale="0.3 0.3 0.3" gltf-model="#home" tap_to_redirect
+        event-set__enter="_event: mouseenter; _target: #house_focus; visible: true"
+        event-set__leave="_event: mouseleave; _target: #house_focus; visible: false">
+        <a-entity id="house_focus" visible="false" position="0 6 0" rotation="0 0 0" scale="0.3 0.3 0.3"
+          gltf-model="#!"></a-entity>
+      </a-entity>
+    </a-marker>
+
+    <a-entity camera>
+      <a-cursor> </a-cursor>
+    </a-entity>
+  </a-scene>
+</body>
+
+</html>
