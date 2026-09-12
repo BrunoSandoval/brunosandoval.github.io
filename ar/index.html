@@ -2,9 +2,7 @@
 <html>
 
 <head>
-
-
-  <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-event-set-component@5.x.x/dist/aframe-event-set-component.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 </head>
@@ -25,7 +23,7 @@
     });
   </script>
 
-  <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3; videoTexture: true; debugUIEnabled: false'
+  <a-scene embedded arjs='debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'
     xrweb="scale:absolute">
     <a-assets>
       <a-asset-item id="robot" src="RobotModel.glb"></a-asset-item>
@@ -45,7 +43,7 @@
       <a-entity position="-1 0 0 " rotation="0 0 0" scale="0.3 0.3 0.3" gltf-model="#home" tap_to_redirect
         event-set__enter="_event: mouseenter; _target: #house_focus; visible: true"
         event-set__leave="_event: mouseleave; _target: #house_focus; visible: false">
-        <a-entity id="house_focus" visible="false" position="0 6 0" rotation="0 0 0" scale="0.3 0.3 0.3"
+        <a-entity id="house_focus" visible="false" position="0 4 0" rotation="0 0 0" scale="0.3 0.3 0.3"
           gltf-model="#!"></a-entity>
       </a-entity>
     </a-marker>
