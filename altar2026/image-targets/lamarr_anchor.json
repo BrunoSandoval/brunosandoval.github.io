@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/lamarr_anchor_luminance.png",
+  "metadata": null,
+  "name": "lamarr_anchor",
+  "type": "PLANAR",
+  "properties": {
+    "left": 52,
+    "top": 0,
+    "width": 1016,
+    "height": 1354,
+    "isRotated": false,
+    "originalWidth": 1119,
+    "originalHeight": 1354
+  },
+  "resources": {
+    "originalImage": "lamarr_anchor_original.png",
+    "croppedImage": "lamarr_anchor_cropped.png",
+    "thumbnailImage": "lamarr_anchor_thumbnail.png",
+    "luminanceImage": "lamarr_anchor_luminance.png"
+  },
+  "created": 1792182861844,
+  "updated": 1792182861844
+}

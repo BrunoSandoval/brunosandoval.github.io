@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/lovelace_anchor_luminance.jpg",
+  "metadata": null,
+  "name": "lovelace_anchor",
+  "type": "PLANAR",
+  "properties": {
+    "left": 0,
+    "top": 126,
+    "width": 2439,
+    "height": 3252,
+    "isRotated": false,
+    "originalWidth": 2439,
+    "originalHeight": 3504
+  },
+  "resources": {
+    "originalImage": "lovelace_anchor_original.jpg",
+    "croppedImage": "lovelace_anchor_cropped.jpg",
+    "thumbnailImage": "lovelace_anchor_thumbnail.jpg",
+    "luminanceImage": "lovelace_anchor_luminance.jpg"
+  },
+  "created": 1792095377230,
+  "updated": 1792095377230
+}

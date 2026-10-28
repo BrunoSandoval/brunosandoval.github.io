@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/candle_anchor_luminance.jpg",
+  "metadata": null,
+  "name": "candle_anchor",
+  "type": "PLANAR",
+  "properties": {
+    "left": 0,
+    "top": 40,
+    "width": 690,
+    "height": 920,
+    "isRotated": false,
+    "originalWidth": 690,
+    "originalHeight": 1000
+  },
+  "resources": {
+    "originalImage": "candle_anchor_original.jpg",
+    "croppedImage": "candle_anchor_cropped.jpg",
+    "thumbnailImage": "candle_anchor_thumbnail.jpg",
+    "luminanceImage": "candle_anchor_luminance.jpg"
+  },
+  "created": 1792966157043,
+  "updated": 1792966157043
+}

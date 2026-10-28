@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <script crossorigin="anonymous" src="8frame-1.5.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@1/dist/xr.js" async crossorigin="anonymous"
+    data-preload-chunks="slam"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@8thwall/landing-page@1/dist/landing-page.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@8thwall/xrextras@1/dist/xrextras.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script src="bundle.js"></script>
+  <script src="events.js"></script>
+
+  <a-scene xrextras-gesture-detection xrextras-loading xrweb="disableWorldTracking: true"
+    renderer="colorManagement:true" cursor="rayOrigin: mouse">
+    <a-assets>
+      <a-asset-item id="frame_model" src="models/frame.glb"></a-asset-item>
+
+      <a-asset-item id="antenna_model" src="models/antenna.glb"></a-asset-item>
+      <a-asset-item id="arc_model" src="models/arc.glb"></a-asset-item>
+      <a-asset-item id="boat_model" src="models/boat.glb"></a-asset-item>
+      <a-asset-item id="book_model" src="models/book.glb"></a-asset-item>
+      <a-asset-item id="candle_model" src="models/candle.glb"></a-asset-item>
+      <a-asset-item id="enigma_model" src="models/enigma.glb"></a-asset-item>
+      <a-asset-item id="froot_model" src="models/froot.glb"></a-asset-item>
+      <a-asset-item id="lander_model" src="models/lander.glb"></a-asset-item>
+      <a-asset-item id="skull_model" src="models/skull.glb"></a-asset-item>
+
+      <img id="lovelace_program" src="images/Diagram_for_the_computation_of_Bernoulli_numbers.jpg">
+
+      <img id="byron" src="images/Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png">
+      <img id="murray" src="images/Commodore_Grace_M._Hopper,_USN_(covered)_head_and_shoulders_crop.jpg">
+      <img id="turing" src="images/Alan_turing_header.jpg">
+      <img id="kiesler" src="images/Hedy_Lamarr_Publicity_Photo_for_The_Heavenly_Body_1944.jpg">
+      <img id="heafield" src="images/Margaret_Hamilton_1995.jpg">
+      <img id="ritchie" src="images/Dennis_Ritchie_2011.jpg">
+    </a-assets>
+
+    <a-camera position="0 1 10"></a-camera>
+
+    <!--    <a-light type="directional" intensity="0.5" position="1 1 1"></a-light>
+    <a-light type="ambient" intensity="1"></a-light>-->
+
+    <xrextras-named-image-target name="lovelace_anchor">
+      <a-plane position="0 -0.5 0.6" rotation="-60 0 0" height="0.5" width="1" color="#666" material="opacity:0.6;"
+        tap_to_redirect="url: ./info/augusta_ada_byron/">
+        <a-entity position="0.0 -0.25 0.01"
+          text="value: Leer mas; color:blue; baseline: bottom; anchor: center; align: center;"></a-entity>
+        <a-entity position="0.0 0.23 0.01" scale="1.25 1.25 1.25"
+          text="value: Augusta Ada Byron; baseline: top; anchor: center; align: center;"></a-entity>
+        <a-entity position="0 0 0.01"
+          text="value: Condesa de Lovelace. Escritora, matematica y la primer programadora;"></a-entity>
+      </a-plane>
+      <a-plane src="#byron" position="0 0 0.01" height="1" width="0.7"></a-plane>
+      <a-entity rotation="90 0 0" scale="0.7 1 1" gltf-model="#frame_model"></a-entity>
+      <a-entity position="-0.5 -0.5 0.3" scale="0.5 0.5 0.5" gltf-model="#candle_model"></a-entity>
+      <a-plane src="#lovelace_program" position="-0.6 0 1" rotation="0 30 0" height="0.35" width="0.5"></a-plane>
+    </xrextras-named-image-target>
+
+    <xrextras-named-image-target name="murray_anchor">
+      <a-plane position="0 -0.5 0.6" rotation="-60 0 0" height="0.5" width="1" color="#666" material="opacity:0.6;"
+        tap_to_redirect="url: ./info/grace_brewster_murray/">
+        <a-entity position="0.0 -0.25 0.01"
+          text="value: Leer mas; color:blue; baseline: bottom; anchor: center; align: center;"></a-entity>
+        <a-entity position="0.0 0.23 0.01" scale="1.25 1.25 1.25"
+          text="value: Grace Brewster Murray; baseline: top; anchor: center; align: center;"></a-entity>
+        <a-entity position="0 0 0.01"
+          text="value: 9 de diciembre de 1906 – 1 de enero de 1992\nAlmirante de la Marina de EE. UU. y pionera de la computacion. Creo el primer compilador y ayudo a desarrollar COBOL.\n\n&quot;Es mas facil pedir perdon que pedir permiso.&quot;"></a-entity>
+      </a-plane>
+      <a-plane src="#murray" position="0 0 0.01" height="1" width="0.75"></a-plane>
+      <a-entity rotation="90 0 0" scale="0.75 1 1" gltf-model="#frame_model"></a-entity>
+      <a-entity position="0.5 -0.5 0.3" scale="0.5 0.5 0.5" gltf-model="#candle_model"></a-entity>
+      <a-entity position="1 -0.5 0.3" rotation="0 30 0" scale="0.02 0.02 0.02" gltf-model="#boat_model"></a-entity>
+    </xrextras-named-image-target>
+
+    <xrextras-named-image-target name="turing_anchor">
+      <a-plane position="0 -0.5 0.6" rotation="-60 0 0" height="0.5" width="1" color="#666" material="opacity:0.6;"
+        tap_to_redirect="url: ./info/alan_mathison_turing/">
+        <a-entity position="0.0 -0.25 0.01"
+          text="value: Leer mas; color:blue; baseline: bottom; anchor: center; align: center;"></a-entity>
+        <a-entity position="0.0 0.23 0.01" scale="1.25 1.25 1.25"
+          text="value: Alan Mathison Turing; baseline: top; anchor: center; align: center;"></a-entity>
+        <a-entity position="0 0 0.01"
+          text="value: Matematico que ayudo a decriptar los mensajes alemanes de la maquina Enigma y creo la especificacion para una de las primeras computadoras y el primer algoritmo de computadora para jugar ajedrez;"></a-entity>
+      </a-plane>
+      <a-plane src="#turing" position="0 0 0.01" height="1" width="0.75"></a-plane>
+      <a-entity rotation="90 0 0" scale="0.75 1 1" gltf-model="#frame_model"></a-entity>
+      <a-entity position="-0.5 -0.5 0.3" scale="0.5 0.5 0.5" gltf-model="#candle_model"></a-entity>
+      <a-entity position="-0.8 -0.6 0.2" rotation="0 30 0" scale="0.2 0.2 0.2" gltf-model="#enigma_model"></a-entity>
+    </xrextras-named-image-target>
+
+    <xrextras-named-image-target name="lamarr_anchor">
+      <a-plane position="0 -0.5 0.6" rotation="-60 0 0" height="0.5" width="1" color="#666" material="opacity:0.6;"
+        tap_to_redirect="url: ./info/hedwig_eva_maria_kiesler/">
+        <a-entity position="0.0 -0.25 0.01"
+          text="value: Leer mas; color:blue; baseline: bottom; anchor: center; align: center;"></a-entity>
+        <a-entity position="0.0 0.23 0.01" scale="1.25 1.25 1.25"
+          text="value: Hedwig Eva Maria Kiesler; baseline: top; anchor: center; align: center;"></a-entity>
+        <a-entity position="0 0 0.01"
+          text="value: Ingeniera, actriz de cine e inventora austriaca. Invento la primera version del espectro ensanchado que permitiria las comunicaciones inalambricas de largas distancias.;"></a-entity>
+      </a-plane>
+      <a-plane src="#kiesler" position="0 0 0.01" height="1" width="0.8"></a-plane>
+      <a-entity rotation="90 0 0" scale="0.8 1 1" gltf-model="#frame_model"></a-entity>
+      <a-entity position="-0.5 -0.5 0.3" scale="0.5 0.5 0.5" gltf-model="#candle_model"></a-entity>
+      <a-entity position="0.8 -0.6 0.2" rotation="0 120 0" scale="0.5 0.5 0.5" gltf-model="#antenna_model"></a-entity>
+    </xrextras-named-image-target>
+
+    <xrextras-named-image-target name="heafield_anchor">
+      <a-plane position="0 -0.5 0.6" rotation="-60 0 0" height="0.5" width="1" color="#666" material="opacity:0.6;"
+        tap_to_redirect="url: ./info/margaret_elaine_heafield/">
+        <a-entity position="0.0 -0.25 0.01"
+          text="value: Leer mas; color:blue; baseline: bottom; anchor: center; align: center;"></a-entity>
+        <a-entity position="0.0 0.23 0.01" scale="1.25 1.25 1.25"
+          text="value: Margaret Elaine Heafield; baseline: top; anchor: center; align: center;"></a-entity>
+        <a-entity position="0 0 0.01"
+          text="value: Cientifica informatica, matematica e ingeniera de software estadounidense. Reconocida por dirigir parte del desarrollo del software utilizado en las misiones Apolo de la NASA, que hicieron posible llevar seres humanos a la Luna.;"></a-entity>
+      </a-plane>
+      <a-plane src="#heafield" position="0 0 0.01" height="1" width="0.75"></a-plane>
+      <a-entity rotation="90 0 0" scale="0.75 1 1" gltf-model="#frame_model"></a-entity>
+      <a-entity position="0.5 -0.5 0.3" scale="0.5 0.5 0.5" gltf-model="#candle_model"></a-entity>
+      <a-entity position="-1.2 -0.6 0.2" rotation="0 30 0" scale="0.2 0.2 0.2" gltf-model="#lander_model"></a-entity>
+    </xrextras-named-image-target>
+
+    <xrextras-named-image-target name="ritchie_anchor">
+      <a-plane position="0 -0.5 0.6" rotation="-60 0 0" height="0.5" width="1" color="#666" material="opacity:0.6;"
+        tap_to_redirect="url: ./info/dennis_macalistair_ritchie/">
+        <a-entity position="0.0 -0.25 0.01"
+          text="value: Leer mas; color:blue; baseline: bottom; anchor: center; align: center;"></a-entity>
+        <a-entity position="0.0 0.23 0.01" scale="1.25 1.25 1.25"
+          text="value: Dennis MacAlistair Ritchie; baseline: top; anchor: center; align: center;"></a-entity>
+        <a-entity position="0 0 0.01"
+          text="value: Creador del lenguaje C y co-creador de UNIX. Su trabajo es la base de casi todo el software moderno.\n\n&quot;UNIX es basicamente un sistema operativo simple, pero hay que ser un genio para entender la simplicidad&quot;.;"></a-entity>
+      </a-plane>
+      <a-plane src="#ritchie" position="0 0 0.01" height="1" width="0.75"></a-plane>
+      <a-entity rotation="90 0 0" scale="0.75 1 1" gltf-model="#frame_model"></a-entity>
+      <a-entity position="-0.5 -0.5 0.3" scale="0.5 0.5 0.5" gltf-model="#candle_model"></a-entity>
+      <a-entity position="0.8 0 0.2" rotation="90 -30 0" scale="0.6 0.6 0.6" gltf-model="#book_model"></a-entity>
+    </xrextras-named-image-target>
+
+    <xrextras-named-image-target name="candle_anchor">
+      <a-entity position="0 -0.6 0" scale="0.5 0.5 0.5" gltf-model="#candle_model"></a-entity>
+      <a-entity position="0.3 -0.6 0.2" scale="0.5 0.5 0.5" gltf-model="#candle_model"></a-entity>
+      <a-entity position="-0.3 -0.6 0.2" scale="0.5 0.5 0.5" gltf-model="#candle_model"></a-entity>
+      <a-plane position="0 -0.4 0.6" rotation="-60 0 0" height="0.5" width="1" color="#666" material="opacity:0.6;">
+        <a-entity position="0 0 0.01"
+          text="value: Fuego para iluminar el camino de las almas al mundo de los vivos y de regreso;"></a-entity>
+      </a-plane>
+    </xrextras-named-image-target>
+
+    <xrextras-named-image-target name="fruit_anchor">
+      <a-entity position="0 -0.6 0" scale="0.5 0.5 0.5" gltf-model="#froot_model"></a-entity>
+      <a-plane position="0 -0.4 0.6" rotation="-60 0 0" height="0.5" width="1" color="#666" material="opacity:0.6;">
+        <a-entity position="0 0 0.01"
+          text="value: Ofrendas de comida y agua para el ambre y la sed de los espiritus;"></a-entity>
+      </a-plane>
+    </xrextras-named-image-target>
+
+    <xrextras-named-image-target name="skull_anchor">
+      <a-entity position="0 -0.5 0" rotation="0 -30 0" scale="1.2 1.2 1.2" gltf-model="#skull_model"></a-entity>
+      <a-plane position="0 -0.4 0.6" rotation="-60 0 0" height="0.5" width="1" color="#666" material="opacity:0.6;">
+        <a-entity position="0 0 0.01"
+          text="value: Calaveras de azucar, que simbolizan a la muerte y como puede ser dulce en vez de amarga;"></a-entity>
+      </a-plane>
+    </xrextras-named-image-target>
+
+    <xrextras-named-image-target name="arc_anchor">
+      <a-entity position="0 -0.5 0" scale="0.2 0.2 0.2" gltf-model="#arc_model"></a-entity>
+      <a-plane position="0 -0.4 0.6" rotation="-60 0 0" height="0.5" width="1" color="#666" material="opacity:0.6;">
+        <a-entity position="0 0 0.01"
+          text="value: Un arco de carrizo o palmilla colocado en el ultimo piso del altar, que simboliza la entrada al mundo de los muertos;"></a-entity>
+      </a-plane>
+    </xrextras-named-image-target>
+  </a-scene>
+</body>
+
+</html>

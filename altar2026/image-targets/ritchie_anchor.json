@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/ritchie_anchor_luminance.jpg",
+  "metadata": null,
+  "name": "ritchie_anchor",
+  "type": "PLANAR",
+  "properties": {
+    "left": 10,
+    "top": 0,
+    "width": 538,
+    "height": 717,
+    "isRotated": false,
+    "originalWidth": 558,
+    "originalHeight": 717
+  },
+  "resources": {
+    "originalImage": "ritchie_anchor_original.jpg",
+    "croppedImage": "ritchie_anchor_cropped.jpg",
+    "thumbnailImage": "ritchie_anchor_thumbnail.jpg",
+    "luminanceImage": "ritchie_anchor_luminance.jpg"
+  },
+  "created": 1792712613693,
+  "updated": 1792712613693
+}

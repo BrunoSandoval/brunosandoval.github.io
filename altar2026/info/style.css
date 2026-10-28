@@ -1,0 +1,56 @@
+@media screen and (orientation: landscape) {
+    img {
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+    body {
+        flex-direction: row;
+    }
+    .infobox {
+        border-left: 3px solid black;
+    }
+}
+@media screen and (orientation: portrait) {
+    img {
+        width: 100vw;
+    }
+    body {
+        flex-direction: column;
+    }
+    .infobox {
+        border-top: 3px solid black;
+    }
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+img {
+    margin: 0px;
+    padding: 0px;
+}
+.infobox {
+    width: 100%;
+}
+
+.navbtn {
+    font-size: 24pt;
+    padding: 9px;
+    background: lightgray;
+    border: 3px outset black;
+    width: 100%;
+}
+.navbtn:hover {
+    background: white;
+    border: 3px outset gray;
+}
+
+.navbtn:active {
+    background: white;
+    border: 3px inset gray;
+}
+
+

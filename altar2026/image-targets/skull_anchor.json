@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/skull_anchor_luminance.jpg",
+  "metadata": null,
+  "name": "skull_anchor",
+  "type": "PLANAR",
+  "properties": {
+    "left": 69,
+    "top": 0,
+    "width": 775,
+    "height": 1033,
+    "isRotated": false,
+    "originalWidth": 913,
+    "originalHeight": 1033
+  },
+  "resources": {
+    "originalImage": "skull_anchor_original.jpg",
+    "croppedImage": "skull_anchor_cropped.jpg",
+    "thumbnailImage": "skull_anchor_thumbnail.jpg",
+    "luminanceImage": "skull_anchor_luminance.jpg"
+  },
+  "created": 1792976862268,
+  "updated": 1792976862268
+}

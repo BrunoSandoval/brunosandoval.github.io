@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/murray_anchor_luminance.jpg",
+  "metadata": null,
+  "name": "murray_anchor",
+  "type": "PLANAR",
+  "properties": {
+    "left": 2,
+    "top": 0,
+    "width": 1538,
+    "height": 2051,
+    "isRotated": false,
+    "originalWidth": 1542,
+    "originalHeight": 2051
+  },
+  "resources": {
+    "originalImage": "murray_anchor_original.jpg",
+    "croppedImage": "murray_anchor_cropped.jpg",
+    "thumbnailImage": "murray_anchor_thumbnail.jpg",
+    "luminanceImage": "murray_anchor_luminance.jpg"
+  },
+  "created": 1792712530177,
+  "updated": 1792712530177
+}

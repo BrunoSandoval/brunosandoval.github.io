@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/turing_anchor_luminance.png",
+  "metadata": null,
+  "name": "turing_anchor",
+  "type": "PLANAR",
+  "properties": {
+    "left": 0,
+    "top": 0,
+    "width": 752,
+    "height": 1002,
+    "isRotated": false,
+    "originalWidth": 752,
+    "originalHeight": 1002
+  },
+  "resources": {
+    "originalImage": "turing_anchor_original.png",
+    "croppedImage": "turing_anchor_cropped.png",
+    "thumbnailImage": "turing_anchor_thumbnail.png",
+    "luminanceImage": "turing_anchor_luminance.png"
+  },
+  "created": 1791836728856,
+  "updated": 1791836728856
+}

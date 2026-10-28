@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/fruit_anchor_luminance.jpg",
+  "metadata": null,
+  "name": "fruit_anchor",
+  "type": "PLANAR",
+  "properties": {
+    "left": 0,
+    "top": 98,
+    "width": 1168,
+    "height": 1557,
+    "isRotated": false,
+    "originalWidth": 1168,
+    "originalHeight": 1752
+  },
+  "resources": {
+    "originalImage": "fruit_anchor_original.jpg",
+    "croppedImage": "fruit_anchor_cropped.jpg",
+    "thumbnailImage": "fruit_anchor_thumbnail.jpg",
+    "luminanceImage": "fruit_anchor_luminance.jpg"
+  },
+  "created": 1792977061676,
+  "updated": 1792977061676
+}

@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/heafield_anchor_luminance.png",
+  "metadata": null,
+  "name": "heafield_anchor",
+  "type": "PLANAR",
+  "properties": {
+    "left": 3,
+    "top": 0,
+    "width": 521,
+    "height": 694,
+    "isRotated": false,
+    "originalWidth": 527,
+    "originalHeight": 694
+  },
+  "resources": {
+    "originalImage": "heafield_anchor_original.png",
+    "croppedImage": "heafield_anchor_cropped.png",
+    "thumbnailImage": "heafield_anchor_thumbnail.png",
+    "luminanceImage": "heafield_anchor_luminance.png"
+  },
+  "created": 1792185519741,
+  "updated": 1792185519741
+}

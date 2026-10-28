@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/arc_anchor_luminance.png",
+  "metadata": null,
+  "name": "arc_anchor",
+  "type": "PLANAR",
+  "properties": {
+    "left": 8,
+    "top": 0,
+    "width": 480,
+    "height": 640,
+    "isRotated": false,
+    "originalWidth": 495,
+    "originalHeight": 640
+  },
+  "resources": {
+    "originalImage": "arc_anchor_original.png",
+    "croppedImage": "arc_anchor_cropped.png",
+    "thumbnailImage": "arc_anchor_thumbnail.png",
+    "luminanceImage": "arc_anchor_luminance.png"
+  },
+  "created": 1793059089369,
+  "updated": 1793059089369
+}
